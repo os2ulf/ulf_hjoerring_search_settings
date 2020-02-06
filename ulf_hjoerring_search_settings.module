@@ -1,0 +1,10 @@
+<?php
+
+/**
+ * @file
+ * Code for the Ulf Hjørring feature.
+ */
+
+include_once 'ulf_hjoerring_search_settings.features.inc';
+
+
