@@ -89,7 +89,7 @@ function ulf_hjoerring_search_settings_default_page_manager_pages() {
     'search_node' => array(
       'id' => '1580996428',
       'server' => 'search_node',
-      'index' => 'internships',
+      'index' => 'educations',
       'options' => array(
         'match_type' => 'best_fields',
         'match_operator' => 'or',
@@ -100,8 +100,6 @@ function ulf_hjoerring_search_settings_default_page_manager_pages() {
         'fields' => array(
           'author:field_profile_name' => 'author:field_profile_name',
           'field_educational_goals' => 'field_educational_goals',
-          'field_full_description:value' => 'field_full_description:value',
-          'field_subject' => 'field_subject',
           'title' => 'title',
           'author' => 0,
           'author:url' => 0,
@@ -109,10 +107,8 @@ function ulf_hjoerring_search_settings_default_page_manager_pages() {
           'created' => 0,
           'field_image:file' => 0,
           'field_location' => 0,
-          'field_offer_type' => 0,
-          'field_period:value2' => 0,
           'field_price' => 0,
-          'field_subject:url' => 0,
+          'field_subject' => 0,
           'field_subjects_primary_school' => 0,
           'field_subjects_youth' => 0,
           'field_target_group' => 0,
@@ -125,23 +121,20 @@ function ulf_hjoerring_search_settings_default_page_manager_pages() {
         'filters' => array(
           'taxonomy' => array(
             'field_educational_goals' => 'field_educational_goals',
-            'field_offer_type' => 'field_offer_type',
-            'field_subject' => 'field_subject',
-            'field_target_group_sub' => 'field_target_group_sub',
+            'field_subject' => 0,
             'field_subjects_primary_school' => 0,
             'field_subjects_youth' => 0,
             'field_target_group' => 0,
+            'field_target_group_sub' => 0,
           ),
           'boolean' => array(
-            'field_free' => 'field_free',
-            'field_period_full_year' => 0,
+            'author:field_garantipartner' => 'author:field_garantipartner',
           ),
         ),
       ),
       'filters' => array(
         'type' => array(
           'field_educational_goals' => 'or',
-          'field_offer_type' => 'or',
           'field_subject' => 'or',
           'field_subjects_primary_school' => 'or',
           'field_subjects_youth' => 'or',
@@ -154,9 +147,7 @@ function ulf_hjoerring_search_settings_default_page_manager_pages() {
         'order' => 'desc',
       ),
       'dates' => array(
-        'fields' => array(
-          'field_period:value' => 'field_period:value',
-        ),
+        'fields' => array(),
       ),
       'intervals' => array(
         'fields' => array(
@@ -166,14 +157,10 @@ function ulf_hjoerring_search_settings_default_page_manager_pages() {
           'changed' => 0,
           'created' => 0,
           'field_educational_goals' => 0,
-          'field_full_description:value' => 0,
           'field_image:file' => 0,
           'field_location' => 0,
-          'field_offer_type' => 0,
-          'field_period:value2' => 0,
           'field_price' => 0,
           'field_subject' => 0,
-          'field_subject:url' => 0,
           'field_subjects_primary_school' => 0,
           'field_subjects_youth' => 0,
           'field_target_group' => 0,
@@ -186,12 +173,8 @@ function ulf_hjoerring_search_settings_default_page_manager_pages() {
         ),
       ),
       'forces' => array(
-        'field' => 'field_target_group',
-        'selected' => array(
-          'Dagtilbud' => 'Dagtilbud',
-          'Grundskole' => 0,
-          'Ungdomsuddannelse' => 0,
-        ),
+        'field' => '_none_',
+        'selected' => array(),
       ),
       'highlight' => array(
         'fields' => array(
@@ -201,14 +184,10 @@ function ulf_hjoerring_search_settings_default_page_manager_pages() {
           'changed' => 0,
           'created' => 0,
           'field_educational_goals' => 0,
-          'field_full_description:value' => 0,
           'field_image:file' => 0,
           'field_location' => 0,
-          'field_offer_type' => 0,
-          'field_period:value2' => 0,
           'field_price' => 0,
           'field_subject' => 0,
-          'field_subject:url' => 0,
           'field_subjects_primary_school' => 0,
           'field_subjects_youth' => 0,
           'field_target_group' => 0,
@@ -221,13 +200,13 @@ function ulf_hjoerring_search_settings_default_page_manager_pages() {
         ),
       ),
       'templates' => array(
-        'box' => '/profiles/ulf/themes/ulf_default/templates/search/angular/search-course.html',
-        'result' => '/profiles/ulf/themes/ulf_default/templates/search/angular/results-course.html',
+        'box' => '/sites/ungegarantien.dk/themes/ulf_hjoerring/templates/search/angular/search-education.html',
+        'result' => '/sites/ungegarantien.dk/themes/ulf_hjoerring/templates/search/angular/results-education.html',
         'pager' => '/profiles/ulf/themes/ulf_default/templates/search/angular/pager.html',
         'popup' => '/profiles/ulf/themes/ulf_default/templates/search/angular/popup-course.html',
       ),
       'autocomplete' => array(
-        'index' => '_none_',
+        'index' => 'educations',
         'field' => '_none_',
         'minChars' => '3',
         'size' => '1',
@@ -356,7 +335,7 @@ function ulf_hjoerring_search_settings_default_page_manager_pages() {
     'override_title_text' => '',
     'override_title_heading' => 'h2',
     'search_node' => array(
-      'id' => '1581322885',
+      'id' => '1581322894',
       'server' => 'search_node',
       'index' => 'internships',
       'options' => array(
@@ -369,11 +348,13 @@ function ulf_hjoerring_search_settings_default_page_manager_pages() {
         'fields' => array(
           'author:field_profile_name' => 'author:field_profile_name',
           'field_educational_goals' => 'field_educational_goals',
+          'field_full_description:value' => 'field_full_description:value',
           'title' => 'title',
           'author' => 0,
           'author:url' => 0,
           'changed' => 0,
           'created' => 0,
+          'field_image:file' => 0,
           'field_location' => 0,
           'field_price' => 0,
           'field_subject' => 0,
@@ -396,7 +377,7 @@ function ulf_hjoerring_search_settings_default_page_manager_pages() {
             'field_target_group_sub' => 0,
           ),
           'boolean' => array(
-            'field_free' => 'field_free',
+            'author:field_garantipartner' => 'author:field_garantipartner',
           ),
         ),
       ),
@@ -425,6 +406,8 @@ function ulf_hjoerring_search_settings_default_page_manager_pages() {
           'changed' => 0,
           'created' => 0,
           'field_educational_goals' => 0,
+          'field_full_description:value' => 0,
+          'field_image:file' => 0,
           'field_location' => 0,
           'field_price' => 0,
           'field_subject' => 0,
@@ -451,6 +434,8 @@ function ulf_hjoerring_search_settings_default_page_manager_pages() {
           'changed' => 0,
           'created' => 0,
           'field_educational_goals' => 0,
+          'field_full_description:value' => 0,
+          'field_image:file' => 0,
           'field_location' => 0,
           'field_price' => 0,
           'field_subject' => 0,
@@ -466,8 +451,8 @@ function ulf_hjoerring_search_settings_default_page_manager_pages() {
         ),
       ),
       'templates' => array(
-        'box' => '/profiles/ulf/themes/ulf_default/templates/search/angular/search-course.html',
-        'result' => '/profiles/ulf/themes/ulf_default/templates/search/angular/results-course.html',
+        'box' => '/sites/ungegarantien.dk/themes/ulf_hjoerring/templates/search/angular/search-internship.html',
+        'result' => '/sites/ungegarantien.dk/themes/ulf_hjoerring/templates/search/angular/results-internship.html',
         'pager' => '/profiles/ulf/themes/ulf_default/templates/search/angular/pager.html',
         'popup' => '/profiles/ulf/themes/ulf_default/templates/search/angular/popup-course.html',
       ),
