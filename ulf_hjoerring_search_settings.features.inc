@@ -29,7 +29,7 @@ function ulf_hjoerring_search_settings_default_search_api_index() {
       "datasource" : { "bundles" : [ "internship" ] },
       "index_directly" : 0,
       "cron_limit" : "50",
-      "search_node_indexes" : null,
+      "search_node_indexes" : "98b141acfa9afc452d8549247a9909f6",
       "fields" : {
         "author" : { "type" : "integer", "entity_type" : "user" },
         "author:field_profile_name" : { "type" : "text" },
