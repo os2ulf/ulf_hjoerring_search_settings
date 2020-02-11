@@ -29,7 +29,7 @@ function ulf_hjoerring_search_settings_default_search_api_index() {
       "datasource" : { "bundles" : [ "education" ] },
       "index_directly" : 0,
       "cron_limit" : "50",
-      "search_node_indexes" : "eb1d2df36fc8221ad1a52d10a7e32fe2",
+      "search_node_indexes" : "1e755e6cdb1a489abc0d883efb86ccc3",
       "fields" : {
         "author" : { "type" : "integer", "entity_type" : "user" },
         "author:field_garantipartner" : { "type" : "boolean" },
@@ -37,12 +37,15 @@ function ulf_hjoerring_search_settings_default_search_api_index() {
         "author:url" : { "type" : "uri" },
         "changed" : { "type" : "date" },
         "created" : { "type" : "date" },
+        "field_competencies" : { "type" : "list\\u003Cinteger\\u003E", "entity_type" : "taxonomy_term" },
         "field_educational_goals" : { "type" : "list\\u003Cinteger\\u003E", "entity_type" : "taxonomy_term" },
         "field_image:file" : { "type" : "list\\u003Cinteger\\u003E", "entity_type" : "file" },
         "field_location" : { "type" : "string" },
         "field_price" : { "type" : "decimal" },
+        "field_subject" : { "type" : "list\\u003Cinteger\\u003E", "entity_type" : "taxonomy_term" },
         "field_subjects_primary_school" : { "type" : "list\\u003Cinteger\\u003E", "entity_type" : "taxonomy_term" },
         "field_subjects_youth" : { "type" : "list\\u003Cinteger\\u003E", "entity_type" : "taxonomy_term" },
+        "field_target_group" : { "type" : "integer", "entity_type" : "taxonomy_term" },
         "field_target_group_sub" : { "type" : "list\\u003Cinteger\\u003E", "entity_type" : "taxonomy_term" },
         "nid" : { "type" : "integer" },
         "search_api_language" : { "type" : "string" },
@@ -208,14 +211,9 @@ function ulf_hjoerring_search_settings_default_search_api_index() {
           "settings" : { "fields" : { "title" : true, "author:field_profile_name" : true } }
         },
         "search_api_html_filter" : {
-          "status" : 1,
+          "status" : 0,
           "weight" : "10",
-          "settings" : {
-            "fields" : { "field_full_description:value" : true },
-            "title" : 0,
-            "alt" : 0,
-            "tags" : ""
-          }
+          "settings" : { "fields" : [], "title" : 0, "alt" : 0, "tags" : "" }
         },
         "search_api_transliteration" : {
           "status" : 0,
