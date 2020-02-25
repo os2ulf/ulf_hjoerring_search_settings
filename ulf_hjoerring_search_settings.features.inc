@@ -31,11 +31,11 @@ function ulf_hjoerring_search_settings_default_search_api_index() {
       "search_node_indexes" : "54894398a98f973ec6a24936b72d3bf4",
       "fields" : {
         "created" : { "type" : "date" },
-        "field_branche" : { "type" : "integer", "entity_type" : "taxonomy_term" },
+        "field_branche" : { "type" : "list\\u003Cinteger\\u003E", "entity_type" : "taxonomy_term" },
         "field_garantipartner" : { "type" : "boolean" },
         "field_image:file" : { "type" : "list\\u003Cinteger\\u003E", "entity_type" : "file" },
         "field_location" : { "type" : "string" },
-        "field_lokation" : { "type" : "integer", "entity_type" : "taxonomy_term" },
+        "field_lokation" : { "type" : "list\\u003Cinteger\\u003E", "entity_type" : "taxonomy_term" },
         "field_profile_contact" : {
           "type" : "list\\u003Cinteger\\u003E",
           "entity_type" : "field_collection_item"
@@ -45,7 +45,7 @@ function ulf_hjoerring_search_settings_default_search_api_index() {
         "field_profile_mail" : { "type" : "text" },
         "field_profile_name" : { "type" : "text" },
         "field_profile_phone" : { "type" : "text" },
-        "field_tilbudsforpligtelser" : { "type" : "integer", "entity_type" : "taxonomy_term" },
+        "field_tilbudsforpligtelser" : { "type" : "list\\u003Cinteger\\u003E", "entity_type" : "taxonomy_term" },
         "roles" : { "type" : "list\\u003Cinteger\\u003E" },
         "search_api_language" : { "type" : "string" },
         "uid" : { "type" : "integer" },
@@ -195,7 +195,7 @@ function ulf_hjoerring_search_settings_default_search_api_index() {
       "search_node_indexes" : "1e755e6cdb1a489abc0d883efb86ccc3",
       "fields" : {
         "author" : { "type" : "integer", "entity_type" : "user" },
-        "author:field_branche" : { "type" : "integer", "entity_type" : "taxonomy_term" },
+        "author:field_branche" : { "type" : "list\\u003Cinteger\\u003E", "entity_type" : "taxonomy_term" },
         "author:field_garantipartner" : { "type" : "boolean" },
         "author:field_profile_name" : { "type" : "text" },
         "author:url" : { "type" : "uri" },
@@ -324,11 +324,11 @@ function ulf_hjoerring_search_settings_default_search_api_index() {
       "search_node_indexes" : "98b141acfa9afc452d8549247a9909f6",
       "fields" : {
         "author" : { "type" : "integer", "entity_type" : "user" },
-        "author:field_branche" : { "type" : "integer", "entity_type" : "taxonomy_term" },
+        "author:field_branche" : { "type" : "list\\u003Cinteger\\u003E", "entity_type" : "taxonomy_term" },
         "author:field_garantipartner" : { "type" : "boolean" },
-        "author:field_lokation" : { "type" : "integer", "entity_type" : "taxonomy_term" },
+        "author:field_lokation" : { "type" : "list\\u003Cinteger\\u003E", "entity_type" : "taxonomy_term" },
         "author:field_profile_name" : { "type" : "text" },
-        "author:field_tilbudsforpligtelser" : { "type" : "integer", "entity_type" : "taxonomy_term" },
+        "author:field_tilbudsforpligtelser" : { "type" : "list\\u003Cinteger\\u003E", "entity_type" : "taxonomy_term" },
         "author:url" : { "type" : "uri" },
         "changed" : { "type" : "date" },
         "created" : { "type" : "date" },
