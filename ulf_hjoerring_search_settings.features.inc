@@ -33,7 +33,6 @@ function ulf_hjoerring_search_settings_default_search_api_index() {
         "created" : { "type" : "date" },
         "field_branche" : { "type" : "list\\u003Cinteger\\u003E", "entity_type" : "taxonomy_term" },
         "field_garantipartner" : { "type" : "boolean" },
-        "field_image:file" : { "type" : "list\\u003Cinteger\\u003E", "entity_type" : "file" },
         "field_location" : { "type" : "string" },
         "field_lokation" : { "type" : "list\\u003Cinteger\\u003E", "entity_type" : "taxonomy_term" },
         "field_profile_contact" : {
@@ -42,6 +41,7 @@ function ulf_hjoerring_search_settings_default_search_api_index() {
         },
         "field_profile_description:value" : { "type" : "text" },
         "field_profile_entry" : { "type" : "text" },
+        "field_profile_logo:file" : { "type" : "integer", "entity_type" : "file" },
         "field_profile_mail" : { "type" : "text" },
         "field_profile_name" : { "type" : "text" },
         "field_profile_phone" : { "type" : "text" },
